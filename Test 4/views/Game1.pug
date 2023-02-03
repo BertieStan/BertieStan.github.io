@@ -1,0 +1,105 @@
+doctype html
+if isAuthenticated
+    head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+      link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css')
+      link(rel='stylesheet' href='./index.css')
+      link(href='http://fonts.cdnfonts.com/css/asimov' rel='stylesheet')
+      style.
+        @import url('http://fonts.cdnfonts.com/css/asimov');
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.border-info
+      .container-fluid
+        img(src='./Imgs/hrbfv.png' style='height: 20px; overflow: hidden; position: absolute; margin-top: -23px; margin-left: 10px;')
+        a.navbar-brand(style="font-family:'Asimov', sans-serif;" href='#') Comraf
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='Game1') Games
+            li.nav-item
+              a.nav-link(href='/') The Ad Wall
+            li.nav-item
+              a.nav-link(href='Search') Search
+    body#body(style="background-color: black; overflow: scroll !important;")
+    .container
+      .row
+        .col
+        .position-relative.col-5.bg-dark(style='margin-top: 10%; height:450px; overflow: hidden;' align='center')
+          .position-absolute(style='margin-left: 12%; margin-top: 5%;')
+            #game-title-pill.rounded-pill.border.border-3.border-warning(style='background-color: red; height: 90px; width: 400px;')
+              h1#game-title.fw-bold.text-uppercase(style='color:blue; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: #000000; margin-top: 5%;') BlackJack
+            #game-title-pill-2.rounded-pill.border.border-3.border-secondary(style='background-color: red; height: 90px; width: 400px; margin-top: -22.5%; visibility:hidden;')
+              h1#game-title.fw-bold.text-uppercase(style='color:blue; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: yellow; margin-top: 5%;') BlackJack
+          div(style='margin-top: 165px;' align='center')
+            a(href='Game2')
+                button#play-btn.btn.btn-lg.btn-outline-light(style='z-index: -1;' type='button' onclick='Load()') Play!
+          .position-absolute(style='bottom:-12%; left:-5%;')
+            img(style='background: transparent;' src='./Imgs/stack.png')
+          .position-absolute(style='margin-left: 50%;')
+            img(style='background: transparent;' src='./Imgs/hand.png')
+        .col
+    script.
+      let playBtn = document.getElementById('play-btn')
+      let body = document.querySelector('body')
+      let gameTitle = document.getElementById('game-title')
+      let gameTitlePill = document.getElementById('game-title-pill-2')
+      //animation
+      window.onload = function () {
+      setInterval(() => {
+      gameTitlePill.style.visibility = 'visible'
+      }, 1000);
+      setInterval(() => {
+      gameTitlePill.style.visibility = 'hidden'
+      }, 2000)
+      }
+      //game page
+      //function Load() {
+      //    location.replace('gamePage.html')
+      //}
+
+else
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css')
+    body#body
+        .row
+        .row
+            .col
+            h1.position-absolute.start-50.translate-middle(style='font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; font-size: 120px; margin-top: 355px;' align='center') Comraf
+            div
+                a(href='/login')
+                    button#btn.position-absolute.top-50.start-50.translate-middle.btn.btn-outline-info.btn-sm.ng-dark(type='button' style='margin-left: 1%; margin-top: 6%;' align='center')  Log In
+        .row
+    script.
+        var body = document.getElementById("body")
+        window.onload = function() {
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'blue'
+        }, 2000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'orange'
+        }, 4000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'yellow'
+        }, 6000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'red'
+        }, 8000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'purple'
+        }, 10000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'brown'
+        }, 12000);
+        }

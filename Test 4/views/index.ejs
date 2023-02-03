@@ -1,0 +1,64 @@
+
+<%= if(req.isAuthenticated != null){ %>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+</head>
+<div class="row"></div>
+<div class="row">
+    <div class="col">
+        <h1 class="position-absolute start-50 translate-middle" style="font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; font-size: 120px; margin-top: 355px;" align="center">Comraf</h1>
+        <div><a href="http://localhost:8000/login"><button class="position-absolute top-50 start-50 translate-middle btn btn-outline-info btn-sm ng-dark" id="btn" type="button" style="margin-left: 1%; margin-top: 6%;" align="center"> Log In</button></a></div>
+    </div>
+</div>
+<div class="row"></div>
+
+<% } else{ %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link href="http://fonts.cdnfonts.com/css/asimov" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/robotop" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/painting-with-chocolate" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/fira-sans" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/impertinencia" rel="stylesheet">
+  <style>
+    @import url('http://fonts.cdnfonts.com/css/asimov');
+    @import url('http://fonts.cdnfonts.com/css/robotop');
+    @import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
+    @import url('http://fonts.cdnfonts.com/css/fira-sans');
+    @import url('http://fonts.cdnfonts.com/css/impertinencia');
+  </style>
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-info">
+  <div class="container-fluid"><img src="./Imgs/hrbfv.png" style="height: 20px; overflow: hidden; position: absolute; margin-top: -23px; margin-left: 10px;"><a class="navbar-brand" style="font-family:'Asimov', sans-serif;" href="#">Comraf</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="views/Game1">Games</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">The Ad Wall</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col"></div>
+    <div class="col col-lg-2"></div>
+    <div class="col-md-auto">
+      <section>
+        <h1 style="margin-top: 15%; text-align: center; font-family: fira sans-serif; color: white;"><strong>Welcome to Comraf!</strong></h1>
+        <p class="border border-dark rounded" style="text-align: center; margin-top: 3%; padding: 10px; background: black; font-family:'Fira Sans', sans-serif; color: white;">Hello all! and welcome to the Comraf testing ground. Hopefully you guys are as<br>                        dangerously excited about it as I am, I mean if all goes to plan we could all soon<br>                        be very wealthy individuals.The premise is simple click<br>                        as many ads as you can, watch the counter go up, have some insanely good fun playing blackjack<br>                        and in a months time cash out!. If I don&apos;t run away with all your money<br>                        HAHAHAHAHAHAHAHAHAHAHHAHA... <br>                        (just kidding I wouldn&apos;t do that I&apos;m a stand up guy, my credit score is over 800).<br></p>
+      </section>
+    </div>
+    <div class="col col-lg-2"></div>
+  </div>
+</div>
+<% } %>
+
+

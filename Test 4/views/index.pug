@@ -1,0 +1,116 @@
+doctype html
+if isAuthenticated
+    head
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1')
+      link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css')
+      link(href='http://fonts.cdnfonts.com/css/asimov' rel='stylesheet')
+      link(href='http://fonts.cdnfonts.com/css/robotop' rel='stylesheet')
+      link(href='http://fonts.cdnfonts.com/css/painting-with-chocolate' rel='stylesheet')
+      link(href='http://fonts.cdnfonts.com/css/fira-sans' rel='stylesheet')
+      link(href='http://fonts.cdnfonts.com/css/impertinencia' rel='stylesheet')
+      style.
+        @import url('http://fonts.cdnfonts.com/css/asimov');
+        @import url('http://fonts.cdnfonts.com/css/robotop');
+        @import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
+        @import url('http://fonts.cdnfonts.com/css/fira-sans');
+        @import url('http://fonts.cdnfonts.com/css/impertinencia');
+    body#body
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.border-info
+          .container-fluid
+            img(src='./Imgs/hrbfv.png' style='height: 20px; overflow: hidden; position: absolute; margin-top: -23px; margin-left: 10px;')
+            a.navbar-brand(style="font-family:'Asimov', sans-serif;" href='#') Comraf
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            #navbarNav.collapse.navbar-collapse
+              ul.navbar-nav
+                li.nav-item
+                  a.nav-link.active(aria-current='page' href='#') Home
+                li.nav-item
+                  a.nav-link(href='Game1') Games
+                li.nav-item
+                  a.nav-link(href='AdWall') The Ad Wall
+                li.nav-item
+                  a.nav-link(href='Search') Search
+
+        .container
+          .row
+            .col
+            .col
+            .col
+            .col.col-lg-2
+            .col-md-auto
+              section
+                h1.position-absolute.start-50.translate-middle(style='margin-top: 15%; text-align: center; font-family: Courier New; color: black;')
+                  strong Welcome to Comraf!
+    script.
+        var body = document.getElementById("body")
+        window.onload = function() {
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'blue'
+        }, 4000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'orange'
+        }, 8000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'yellow'
+        }, 12000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'red'
+        }, 16000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'purple'
+        }, 10000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'brown'
+        }, 20000);
+        }
+                
+else
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css')
+    body#body
+        .row
+        .row
+            .col
+            h1.position-absolute.start-50.translate-middle(style='font-family:Rockwell,Courier Bold,Courier,Georgia,Times,Times New Roman,serif; font-size: 120px; margin-top: 355px;' align='center') Comraf
+            div
+                a(href='/login')
+                    button#btn.position-absolute.top-50.start-50.translate-middle.btn.btn-outline-info.btn-sm.ng-dark(type='button' style='margin-left: 1%; margin-top: 6%;' align='center')  Log In
+        .row
+    script.
+        var body = document.getElementById("body")
+        window.onload = function() {
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'blue'
+        }, 2000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'orange'
+        }, 4000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'yellow'
+        }, 6000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'red'
+        }, 8000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'purple'
+        }, 10000);
+        setInterval(() =>
+        {
+        body.style.backgroundColor = 'brown'
+        }, 12000);
+        }

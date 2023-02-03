@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Test 4</Name>
+    <RootNamespace>Test 4</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>dc75b812-db9a-49aa-a5e9-8179a27306a9</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>index.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".env">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="index.js" />
+    <Content Include="public\Imgs\back.jpg" />
+    <Content Include="public\Imgs\bkshelf.jpg" />
+    <Content Include="public\Imgs\blue chip" />
+    <Content Include="public\Imgs\hand" />
+    <Content Include="public\Imgs\hand.png" />
+    <Content Include="public\Imgs\hand2" />
+    <Content Include="public\Imgs\hrbfv.png" />
+    <Content Include="public\Imgs\k10.png" />
+    <Content Include="public\Imgs\k2.png" />
+    <Content Include="public\Imgs\k3.png" />
+    <Content Include="public\Imgs\k4.png" />
+    <Content Include="public\Imgs\k5.png" />
+    <Content Include="public\Imgs\k6.png" />
+    <Content Include="public\Imgs\k7.png" />
+    <Content Include="public\Imgs\k8.png" />
+    <Content Include="public\Imgs\k9.png" />
+    <Content Include="public\Imgs\ka.png" />
+    <Content Include="public\Imgs\kj.png" />
+    <Content Include="public\Imgs\kk.png" />
+    <Content Include="public\Imgs\kq.png" />
+    <Content Include="public\Imgs\l10.png" />
+    <Content Include="public\Imgs\l2.png" />
+    <Content Include="public\Imgs\l3.png" />
+    <Content Include="public\Imgs\l4.png" />
+    <Content Include="public\Imgs\l5.png" />
+    <Content Include="public\Imgs\l6.png" />
+    <Content Include="public\Imgs\l7.png" />
+    <Content Include="public\Imgs\l8.png" />
+    <Content Include="public\Imgs\l9.png" />
+    <Content Include="public\Imgs\la.png" />
+    <Content Include="public\Imgs\lj.png" />
+    <Content Include="public\Imgs\lk.png" />
+    <Content Include="public\Imgs\lq.png" />
+    <Content Include="public\Imgs\p10.png" />
+    <Content Include="public\Imgs\p2.png" />
+    <Content Include="public\Imgs\p3.png" />
+    <Content Include="public\Imgs\p4.png" />
+    <Content Include="public\Imgs\p5.png" />
+    <Content Include="public\Imgs\p6.png" />
+    <Content Include="public\Imgs\p7.png" />
+    <Content Include="public\Imgs\p8.png" />
+    <Content Include="public\Imgs\p9.png" />
+    <Content Include="public\Imgs\pa.png" />
+    <Content Include="public\Imgs\pj.png" />
+    <Content Include="public\Imgs\pk.png" />
+    <Content Include="public\Imgs\pq.png" />
+    <Content Include="public\Imgs\s10.png" />
+    <Content Include="public\Imgs\s2.png" />
+    <Content Include="public\Imgs\s3.png" />
+    <Content Include="public\Imgs\s4.png" />
+    <Content Include="public\Imgs\s5.png" />
+    <Content Include="public\Imgs\s6.png" />
+    <Content Include="public\Imgs\s7.png" />
+    <Content Include="public\Imgs\s8.png" />
+    <Content Include="public\Imgs\s9.png" />
+    <Content Include="public\Imgs\sa.png" />
+    <Content Include="public\Imgs\sign" />
+    <Content Include="public\Imgs\sign.png" />
+    <Content Include="public\Imgs\sign2.png" />
+    <Content Include="public\Imgs\sign3.png" />
+    <Content Include="public\Imgs\sj.png" />
+    <Content Include="public\Imgs\sk.png" />
+    <Content Include="public\Imgs\sq.png" />
+    <Content Include="public\Imgs\stack" />
+    <Content Include="public\Imgs\stack.png" />
+    <Content Include="public\Imgs\stones.jpeg" />
+    <Content Include="public\Imgs\up.png" />
+    <Content Include="routes\index.js" />
+    <Content Include="routes\users.js" />
+    <Content Include="package.json" />
+    <Content Include="public\stylesheets\main.css" />
+    <Content Include="README.md" />
+    <Content Include="views\AdWall.pug">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\error.pug" />
+    <Content Include="views\Game1.pug" />
+    <Content Include="views\Game2.pug" />
+    <Content Include="views\index.pug" />
+    <Content Include="views\js\Game2.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\js\Game1.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\layout.pug" />
+    <Content Include="views\Search.pug">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="public\" />
+    <Folder Include="public\images\" />
+    <Folder Include="public\javascripts\" />
+    <Folder Include="public\Imgs\" />
+    <Folder Include="public\stylesheets\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+    <Folder Include="views\js\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
